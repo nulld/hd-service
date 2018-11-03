@@ -11,7 +11,7 @@ LOG_FILENAME = "/tmp/hd-service.log"
 LOG_LEVEL = logging.INFO  # Could be e.g. "DEBUG" or "WARNING"
 
 # Define and parse command line arguments
-parser = argparse.ArgumentParser(description="My simple Python service")
+parser = argparse.ArgumentParser(description="Human detection service")
 parser.add_argument("-l", "--log", help="file to write log to (default '" + LOG_FILENAME + "')")
 
 # If the log file is specified on the command line then override the default
@@ -55,7 +55,7 @@ i = 0
 # Loop forever, doing something useful hopefully:
 while True:
         logger.info("The counter is now " + str(i))
-        print "This is a print"
+        print("This is a print")
         i += 1
         time.sleep(5)
         if i == 3:
